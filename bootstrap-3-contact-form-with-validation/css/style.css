@@ -1,0 +1,20 @@
+section#contact {
+    background-color: #385e40;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+legend {
+    padding-left: 150px;
+}
+fieldset
+{
+  margin:30px;  
+}
+
+
+#success_message{
+    color: #383d5e;
+    display: none;
+    
+}
