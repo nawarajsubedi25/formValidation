@@ -1,3 +1,4 @@
+  
   $(document).ready(function() {
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
@@ -37,6 +38,7 @@
                     }
                 }
             },
+            /*
             phone: {
                 validators: {
                     notEmpty: {
@@ -58,6 +60,7 @@
                     }
                 }
             },
+            */
             cityName: {
                 validators: {
                      stringLength: {
@@ -78,17 +81,32 @@
             countryName: {
                 validators: {
                     notEmpty: {
-                        message: 'Please select your state'
+                        message: 'Please select your Country'
                     }
                 }
             },
-            TravelingFor: {
+            /*TravelingFor: {
                 validators: {
                     notEmpty: {
                         message: 'The job position is required'
                     }
                 }
             },
+            HowDidYouHear: {
+                validators: {
+                    notEmpty: {
+                        message: 'The job position is required'
+                    }
+                }
+            },
+            DidYouStay: {
+                validators: {
+                    notEmpty: {
+                        message: 'The job position is required'
+                    }
+                }
+            },
+            */
             zipCode: {
                 validators: {
                     notEmpty: {
@@ -132,4 +150,5 @@
                 console.log(result);
             }, 'json');
         });
+         $('#contact_form').bootstrapValidator('resetForm', true);
 });

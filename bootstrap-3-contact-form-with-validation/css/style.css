@@ -5,14 +5,31 @@ section#contact {
     padding: 40px;
 }
 legend {
-    padding-left: 150px;
+    padding-left: 160px;
+    color:#890f19;
+    font-weight: 600;
+    border-style: solid;
+    border-bottom-color: black;
+}
+label.control-label
+{
+    color: #0f897d;
 }
 fieldset
 {
   margin:30px;  
+  border-style: dotted;
+}
+ul
+{
+    list-style-type: none;
+    padding-left: 0px;
 }
 
-
+li {
+    display: inline-block;
+    padding-right:27px;
+}
 #success_message{
     color: #383d5e;
     display: none;
