@@ -10,11 +10,16 @@
         fields: {
             firstName: {
                 validators: {
-                        stringLength: {
+                     stringLength: {
                         min: 2,
+                        message: 'Please Enter your First Name'
                     },
-                        notEmpty: {
-                        message: 'Please Enter Your First Name'
+                    notEmpty: {
+                        message: 'Please Enter your first Name'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z\s]+$/,
+                        message: 'First name can only consist of alphabetical'
                     }
                 }
             },
@@ -22,9 +27,14 @@
                 validators: {
                      stringLength: {
                         min: 2,
+                         message: 'Please Enter Your Last Name'
                     },
                     notEmpty: {
                         message: 'Please Enter Your Last Name'
+                    },
+                     regexp: {
+                        regexp: /^[a-zA-Z\s]+$/,
+                        message: 'Last name can only consist of alphabetical'
                     }
                 }
             },
@@ -120,6 +130,9 @@
             },
                  noInParty: {
                 validators: {
+                     integer: {
+                        message: 'The value is not an integer'
+                    },
                       between: {
                         min: 1,
                         max: 50,
